@@ -1,0 +1,25 @@
+cxx_binary(
+  name = 'genetic-algo',
+  srcs = [
+    'GeneticAlgo.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:fido',
+  ],
+)
+
+cxx_binary(
+  name = 'back-propagation',
+  srcs = [
+    'Backpropagation.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:fido',
+  ],
+)
